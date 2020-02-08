@@ -27,3 +27,16 @@ function sumStrings(a, b) {
   return res(a.split(""), b.split(""), "").toString().replace(/^0+/, '');
 }
 ```
+## Experience
+what i should to write if i haven't any exp in programming????? HELP  
+Made site with friend in school with 10k/day trafic (in 2008 it was my pride) oh help i drivel
+
+## Education 
+> 2014-2018 -- BSUIR  
+> no cources  
+> no seminars  
+> no lectures and online learning.  
+
+
+## English
+Intermediate
