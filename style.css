@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+    font-family: "Veradna", "Arial", sans-serif;
+}
+.photo{
+    border-radius: 50%;
+    width: 100px;
+}
