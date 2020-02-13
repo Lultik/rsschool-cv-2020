@@ -3,26 +3,33 @@
     padding: 0;
 }
 .container{
-    margin-top: 20px;
     width: 1024px;
-    margin: 0 auto;
-    font-family: "Calibri", "Arial", sans-serif;
+    margin: 20px auto;
+    font-family: "Optima", "Arial", sans-serif;
 }
 
 .photo{
     border-radius: 50%;
     width: 200px;
-    rotation: 45deg;
 }
 .information{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
 
 
 }
-.information > section:nth-child(6){
+.pre {
+    margin: 20px; padding: 20px;
+    color: #aaa; background-color: #222;
+    white-space: pre; text-shadow: 0 1px 0 #000;
+    border-radius: 15px; border-bottom: 1px solid #555;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4) inset, 0 0 20px rgba(0,0,0,0.2) inset;
+    font: 16px/24px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
 
+.code-example{
+    grid-column: 1 / 4;
 }
 
 .goals{
@@ -39,11 +46,13 @@
 .first-name{
     color: #949494;
     font-size: 40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .second-name{
     padding-bottom: 60px;
     color: #f8bb10;
     font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .contacts{
     border-top: 1px solid grey;
@@ -54,4 +63,8 @@
     grid-column-gap: 20px;
     grid-auto-flow: column;
 }
-.goals
+.title{
+    font-size: 30px;
+    color: #f8bb10 ;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

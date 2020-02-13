@@ -22,27 +22,27 @@
         </section>
         <div class="information">
         <section class="goals">
-            <h3>Goals, wishes</h3>
+            <h3 class="title">Goals, wishes</h3>
             <p>Main goal in my life is always take some knowledges, i think wthout selfeducation people
                 would remained monkeys. I want use my knowledges to make my life more easily.
             </p>
         </section>
         <section class="skills">
-            <h3>Skills</h3>
+            <h3 class="title">Skills</h3>
             <p>
                 Learning Html, css, php, C, C++, js on basic lvl and now want to learn more.
             </p>
         </section>
 
         <section class="experience">
-            <h3>Experience</h3>
+            <h3 class="title">Experience</h3>
             <p>
                 What i should to write if i haven't any exp in programming????? HELP
                 Made site with friend in school with 10k/day trafic (in 2008 it was my pride) oh help i drivel
             </p>
         </section>
         <section class="education">
-            <h3>Education</h3>
+            <h3 class="title">Education</h3>
             <p>
                 2014-2018 -- BSUIR <br>
                 no cources <br>
@@ -51,17 +51,30 @@
             </p>
         </section>
         <section>
-            <h3>English</h3>
+            <h3 class="title">English</h3>
             <p>
                 Intermediate
             </p>
         </section>
 
         <section class="code-example">
-            <h3>Code example</h3>
-            <p>
-                loremru
-            </p>
+            <h3 class="title">Code example</h3>
+            <pre class="pre">
+The task was return the string representation of the sum from
+string representations of two integers(>32bit)
+
+ function res(a, b, t, c){
+    if(a.length == 0 && b.length == 0)
+        return t;
+    var l = parseInt(a.pop() || '0') + parseInt(b.pop() || '0') + (c || 0);
+    if(a.length == 0 && b.length == 0)
+        return res(a, b, l + (t || ""), l > 9? 1:0);
+    return res(a, b, (l % 10) + (t || ""), l > 9? 1:0);
+}
+function sumStrings(a, b) {
+    return res(a.split(""), b.split(""), "").toString().replace(/^0+/, '');
+}
+            </pre>
         </section>
         </div>
     </div>
