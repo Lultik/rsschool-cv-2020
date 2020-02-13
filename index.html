@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Resume</title>
+    </head>
+
+        <div class="container">
+        <section class="about">
+            <img class="photo" src="img\photo.jpg" >
+            <div class="person">
+                    <p class="first-name">mikhail</p>
+                    <h2 class="second-name">STANKEVICH</h2>
+                <ul class="contacts">
+                    <li class="location">Location:</li><span class="city">Minsk</span>
+                    <li class="phone">Phone:</li><span class="tel">+375 25 905 26 88</span>
+                    <li class="email">Email:</li><span class="mail">mihwil27021@gmail.com</span>
+                </ul>
+            </div>
+        </section>
+        <div class="information">
+        <section class="goals">
+            <h3 class="title">Goals, wishes</h3>
+            <p>Main goal in my life is always take some knowledges, i think wthout selfeducation people
+                would remained monkeys. I want use my knowledges to make my life more easily.
+            </p>
+        </section>
+        <section class="skills">
+            <h3 class="title">Skills</h3>
+            <p>
+                Learning Html, css, php, C, C++, js on basic lvl and now want to learn more.
+            </p>
+        </section>
+
+        <section class="experience">
+            <h3 class="title">Experience</h3>
+            <p>
+                What i should to write if i haven't any exp in programming????? HELP
+                Made site with friend in school with 10k/day trafic (in 2008 it was my pride) oh help i drivel
+            </p>
+        </section>
+        <section class="education">
+            <h3 class="title">Education</h3>
+            <p>
+                2014-2018 -- BSUIR <br>
+                no cources <br>
+                no seminars <br>
+                no lectures and online learning. <br>
+            </p>
+        </section>
+        <section>
+            <h3 class="title">English</h3>
+            <p>
+                Intermediate
+            </p>
+        </section>
+
+        <section class="code-example">
+            <h3 class="title">Code example</h3>
+            <pre class="pre">
+The task was return the string representation of the sum from
+string representations of two integers(>32bit)
+
+ function res(a, b, t, c){
+    if(a.length == 0 && b.length == 0)
+        return t;
+    var l = parseInt(a.pop() || '0') + parseInt(b.pop() || '0') + (c || 0);
+    if(a.length == 0 && b.length == 0)
+        return res(a, b, l + (t || ""), l > 9? 1:0);
+    return res(a, b, (l % 10) + (t || ""), l > 9? 1:0);
+}
+function sumStrings(a, b) {
+    return res(a.split(""), b.split(""), "").toString().replace(/^0+/, '');
+}
+            </pre>
+        </section>
+        </div>
+    </div>
+    </body>
+
+</html>
